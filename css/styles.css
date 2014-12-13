@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.block {
+    height: 100%;
+    border-box: box-sizing; /* One of my CSS3-favourites */
+}
+
+#landing-page .bcg-landing{
+	overflow: hidden;
+	height:100%;
+    background-image: url("../img/fox-close-up.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    
+    
+}
+    .landing-text {
+        width: 200px;
+        line-height: 200%;
+        margin-top: 10%;
+        margin-left: 10%;
+        background-color: black;
+        color: white;
+        opacity: 0.5;
+    }
