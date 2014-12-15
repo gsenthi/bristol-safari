@@ -1,31 +1,86 @@
 body, html {
-    height: 100%;
+    height:100%;
     padding: 0;
     margin: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .block {
     height: 100%;
-    border-box: box-sizing; /* One of my CSS3-favourites */
+    border-box: box-sizing;
 }
 
-#landing-page .bcg-landing{
-	overflow: hidden;
-	height:100%;
+.block-short {
+	height:70%;
+	border-box: box-sizing;
+}
+/*
+.block .block-short {
+	
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+}*/
+
+/*Page 1*/
+
+ #landing-page .bcg{
+ 	
     background-image: url("../img/fox-close-up.jpg");
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.landing-text {
+    width: 500px;
+    line-height: 500%;
+    padding-top: 10%;
+    margin-top: 0;
+    margin-left: 10%;
+    color: black;
     
     
 }
-    .landing-text {
-        width: 200px;
-        line-height: 200%;
-        margin-top: 10%;
-        margin-left: 10%;
-        background-color: black;
-        color: white;
-        opacity: 0.5;
-    }
+
+.landing-text h2{
+  margin:0;
+  color: black;
+  font-size: 80px;  
+}
+
+.landing-text p{
+  font-size: 50px;
+}
+
+/*Page 2*/
+
+#short-text .bcg {
+	background-color: black;
+	margin: 0;
+	height: 100%;
+}
+
+#short-text{
+	padding:0;
+	color: white;
+}
+
+.short-text p{
+	margin:0;
+}
+
+/*Page 3*/
+
+#page-3 {
+	background-color: red;	
+}
+
+
