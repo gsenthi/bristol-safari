@@ -11,26 +11,17 @@ body, html {
 }
 
 .block-short {
-	height:70%;
+	height:50%;
 	border-box: box-sizing;
 }
-/*
-.block .block-short {
-	
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
 
-}*/
+
 
 /*Page 1*/
 
  #landing-page .bcg{
  	
-    background-image: url("../img/fox-close-up.jpg");
+    background-image: url("../public-folder/img/fox-close-up1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,7 +33,7 @@ body, html {
 .landing-text {
     width: 500px;
     line-height: 500%;
-    padding-top: 10%;
+    padding-top: 20%;
     margin-top: 0;
     margin-left: 10%;
     color: black;
@@ -73,14 +64,54 @@ body, html {
 	color: white;
 }
 
-.short-text p{
+.shorttext p{
 	margin:0;
+}
+
+/* Page 5 */
+
+#short-text-2 .bcg {
+  background-color: black;
+  margin: 0;
+  height: 100%;
+}
+
+#short-text-2{
+  padding:0;
+  color: white;
 }
 
 /*Page 3*/
 
 #page-3 {
-	background-color: red;	
+	 background-image: url("../public-folder/img/fox-black-bcg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
+
+/* page 4*/
+
+#page-4 {
+  background-image: url("../public-folder/img/fox-close-up2.jpg");
+   background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* page 6 - image mapping*/
+
+#page-6-map {
+  background-image: url("../public-folder/img/fox-interactive1.jpg");
+   background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
 
 
