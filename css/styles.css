@@ -11,12 +11,19 @@ body, html {
 }
 
 .block-short {
-	height:45%;
+	height:55%;
 	border-box: box-sizing;
 }
 
-
-
+.firstcharacter {
+  font-size: 80px;
+  color: rgb(255,69,0);
+  margin:0;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  float: left;
+  line-height: 60px;
+}
 /*Page 1*/
 
  #landing-page .bcg{
@@ -61,43 +68,30 @@ body, html {
 
 #short-text{
 	padding:0;
+  margin: 0;
 	color: white;
+
 }
 
 .shorttext p{
 	margin:0;
 }
 
-/* Page 5 */
-
-#short-text-2 .bcg {
+.cols2 {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  -webkit-column-rule: 1px solid rgb(255,69,0);
+  padding: 30px 20px 20px 20px;
+  font-size: 18px;
   
-  margin: 0;
-  height: 100%;
-}
 
-#short-text-2{
-  padding:0;
-  color: white;
-}
-
-/*  Page 7  */
-
-#short-text-3 .bcg {
   
-  margin: 0;
-  height: 100%;
-}
-
-#short-text-3{
-  padding:0;
-  color: white;
 }
 
 /*Page 3*/
 
 #page-3 {
-	 background-image: url("../public-folder/img/fox-black-bcg1.jpg");
+   background-image: url("../public-folder/img/fox-black-bcg1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -118,35 +112,21 @@ body, html {
 }
 
 
+/* Page 5 */
 
-#page-7 {
-    background-image: url("../public-folder/img/young-fox1.jpg");
-    
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
+#short-text-2 .bcg {
+  
+  margin: 0;
+  height: 100%;
 }
 
-/* page 9 - image mapping*/
-
-#page-9-map {
-  background-image: url("../public-folder/img/fox-interactive1.jpg");
-   background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
+#short-text-2{
+  padding:0;
+  color: white;
 }
 
-/* Text Styling */
+/* Page 6 Image slide show*/
 
-
-
-
-
-/* image slideshow */
 
 .image-gallery {
   max-height: 100%;
@@ -276,7 +256,7 @@ body, html {
   z-index: 2;
   bottom: 200px;
   width: 100%;
-  color: #ffc;
+  color: white;
   text-align: center;
   font-size: 24px;
   letter-spacing: .1em;
@@ -304,5 +284,47 @@ body, html {
   opacity: 0;
   filter: alpha(opacity=0);
 }
+
+
+
+/*  Page 7  */
+
+#page-7 {
+    background-image: url("../public-folder/img/young-fox1.jpg");
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Page 8 */
+
+#short-text-3 .bcg {
+  
+  margin: 0;
+  height: 100%;
+}
+
+#short-text-3{
+  padding:0;
+  color: white;
+}
+
+
+
+
+/* page 9 - image mapping*/
+
+#page-9-map {
+  background-image: url("../public-folder/img/fox-interactive1.jpg");
+   background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
 
 
