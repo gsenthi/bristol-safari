@@ -2,7 +2,7 @@ body, html {
     height:100%;
     padding: 0;
     margin: 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .block {
@@ -24,6 +24,58 @@ body, html {
   float: left;
   line-height: 60px;
 }
+
+/* Opening Curtain */
+
+#opening-curtain .bcg {
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.opening-text {
+    width: 1000px;
+    /*line-height: 500%;*/
+    padding-top: 15%;
+    margin-top: 0;
+    margin-left: 10%;
+    color: black;
+    /*border-left: 10px solid black;*/
+    float: left;
+    font-family: 'La Belle Aurore', cursive;
+   
+}
+
+.opening-text h2{
+  margin:0;
+  padding-left: 13px;
+
+  color: black;
+  font-size: 80px;
+  letter-spacing: 0.1px;
+
+}
+
+.opening-text p{
+  width: 1000px;
+  font-size: 50px;
+  margin:0;
+  text-align: left;
+  /*background-color: #61615E;*/
+  color:black;
+}
+
+.intro-picture {
+  float: right;
+  position: absolute;
+  right: 153px;
+  top: 100px;
+}
+
 /*Page 1*/
 
  #landing-page .bcg{
@@ -37,6 +89,8 @@ body, html {
     width: 100%;
 }
 
+/* NOT USED ON THIS PAGE */
+
 .landing-text {
     width: 500px;
     line-height: 500%;
@@ -44,8 +98,7 @@ body, html {
     margin-top: 0;
     margin-left: 10%;
     color: black;
-    
-    
+        
 }
 
 .landing-text h2{
@@ -57,6 +110,7 @@ body, html {
 .landing-text p{
   font-size: 50px;
 }
+/* ^ NOT USED ON THIS PAGE ^* /
 
 /*Page 2*/
 
@@ -75,13 +129,14 @@ body, html {
 
 .shorttext p{
 	margin:0;
+  text-align: justify;
 }
 
 .cols2 {
   -webkit-column-count: 2;
   -webkit-column-gap: 20px;
   -webkit-column-rule: 1px solid rgb(255,69,0);
-  padding: 30px 20px 20px 20px;
+  padding: 40px 40px 20px 40px;
   font-size: 18px;
   
 
@@ -91,7 +146,7 @@ body, html {
 /*Page 3*/
 
 #page-3 {
-   background-image: url("../public-folder/img/fox-black-bcg1.jpg");
+   background-image: url("../public-folder/img/blurred-fox1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -131,6 +186,7 @@ body, html {
 .image-gallery {
   max-height: 100%;
   background-color: #CD853F;
+  
 }
 
 /*
@@ -152,6 +208,7 @@ body, html {
   margin-top: auto;
   margin-bottom: auto;
   z-index: 1;
+
 }
 
 
@@ -202,7 +259,7 @@ body, html {
   bottom: 0;
   padding: 0;
   margin: auto 0;
-  width: 15%;
+  width: 10%;
   height: 600px;        /* Image height */
   border: none;
   outline: none;
@@ -210,12 +267,8 @@ body, html {
   background: transparent url(images/blank.gif);
   font-size: 100px;
   font-family: "Courier New", courier, fixed;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity .5s;
-  -moz-transition: opacity .5s;
-  -o-transition: opacity .5s;
-  transition: opacity .5s;
+  opacity: 1;
+
 }
 
 #leftButton {
@@ -238,8 +291,8 @@ body, html {
 */
 
 #leftButton:hover, #rightButton:hover {
-  opacity: .5;
-  filter: alpha(opacity=50);
+  opacity: 1;
+  color: rgb(255,69,0);
   outline: none;
 }
 
@@ -290,7 +343,7 @@ body, html {
 /*  Page 7  */
 
 #page-7 {
-    background-image: url("../public-folder/img/young-fox1.jpg");
+    background-image: url("../public-folder/img/fox-yawning1.jpg");
     
     background-position: center center;
     background-repeat: no-repeat;
@@ -320,6 +373,17 @@ body, html {
 #page-9-map {
   background-image: url("../public-folder/img/fox-interactive1.jpg");
    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Page 10 */
+#page-10 {
+    background-image: url("../public-folder/img/fox-road1.jpg");
+    
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
