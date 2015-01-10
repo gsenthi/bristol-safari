@@ -165,7 +165,7 @@ var opts = {
         speed : 10000, 
         pauseOnHover : true
     },
-    fullScreen : true, 
+    fullScreen : false, 
     swipe : true
 };
 makeBSS('.foxgallery', opts);

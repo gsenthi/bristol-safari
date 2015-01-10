@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/iPicture.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css">
 
 </head>
 
@@ -177,14 +177,67 @@
 
             <figure>
 
-		      <img src="public-folder/img/fox-black-bcg1.jpg" alt="Barbed Wire" height="100%"/><figcaption>Thomas Hawk</figcaption>
+		      <img src="public-folder/img/g-fox-black-bcg1.jpg" alt="Barbed Wire" />
+
+		      <figcaption>Thomas Hawk</figcaption>
 
             </figure>
 
             <figure>
-		      <img src="public-folder/img/fox-portrait1.jpg"alt="Feather" height="100%"/><figcaption>"Colorado"</figcaption> 
+
+		      <img src="public-folder/img/g-fox-portrait1.jpg"alt="Feather" />
+
+		      <figcaption>"Colorado"</figcaption> 
+
+            </figure>
+
+             <figure>
+
+		      <img src="public-folder/img/g-blurred-fox1.jpg"alt="Feather" />
+
+		      <figcaption>"Colorado"</figcaption> 
+
+            </figure>
+
+             <figure>
+
+		      <img src="public-folder/img/g-fox-close-up2.jpg"alt="Feather" height="100%"/>
+
+		      <figcaption>"Colorado"</figcaption> 
+
+            </figure>
+
+             <figure>
+
+		      <img src="public-folder/img/g-Urban-fox1.jpg"alt="Feather" height="100%"/>
+
+		      <figcaption>"Colorado"</figcaption> 
+
             </figure>
            
+            <figure>
+
+		      <img src="public-folder/img/g-Face-to-face1.jpg"alt="Feather" height="100%"/>
+
+		      <figcaption>"Colorado"</figcaption> 
+
+            </figure>
+
+            <figure>
+
+		      <img src="public-folder/img/g-fox-portrait2.jpg"alt="Feather" height="100%"/>
+
+		      <figcaption>"Colorado"</figcaption> 
+
+            </figure>
+
+            <figure>
+
+		      <img src="public-folder/img/g-fox-fox-street1.jpg"alt="Feather" height="100%"/>
+
+		    <figcaption>"Colorado"</figcaption> 
+
+            </figure>
         </div> <!-- // bss-slides -->
 		
 	
@@ -241,52 +294,23 @@
 
 		<!-- Page 9 -->
 
+		<div class="block" id="page-9-map">
 
-	<div id="iPicture" data-interaction="hover" 	
+			<div class="tooltip" id="tip1" title="This is my image's tooltip message!" /></div>
 
-			class="bcg"
-	      	data-anchor-target="#iPicture">
+			<div class="tooltip" id="tip2" title="This is the second tooltip" /></div>
 
-  		<div class="ip_slide">
+			<div class="tooltip" id="tip3" title="This is the third tooltip" /></div>
 
-    	<img class="ip_tooltipImg" src="public-folder/img/fox-interactive1.jpg">
+			<div class="tooltip" id="tip4" title="This is the forth tooltip" /></div>
 
-    		<div class="ip_tooltip ip_img32" style="top: 324px; left: 310px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgB" data-animationtype="ltr-slide">
-      	
-      			<p>
-      			</p>
-
-    		</div>
-    
-    		<div class="ip_tooltip ip_img32" style="top: 476px; left: 998px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgB" data-animationtype="ltr-slide">
-      			
-      			<p>
-      			</p>
-
-    		</div>
-    
-    		<div class="ip_tooltip ip_img32" style="top: 391px; left: 423px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgB" data-animationtype="ltr-slide">
-
-      			<p>
-      			</p>
-    		
-    		</div>
-    
-    		<div class="ip_tooltip ip_img32" style="top: 462px; left: 343px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgB" data-animationtype="ltr-slide">
-
-      		<p>
-      		</p>
-    		
-    		</div>
-  
-  		</div>
+		</div>
 	
-	</div>
 
 	
 		<!-- page 10 -->
 
-	<div class="block" id="page-10">
+		<div class="block" id="page-10">
 
 		  <div
 	      	class="bcg"
@@ -303,9 +327,9 @@
 
 		</div>
 
-	<!-- End Page: About Ian -->
+	<!-- Page 11 -->
 
-	<div class="block" id="page-4">
+		<div class="block" id="page-11">
 
 		  <div
 	      	class="bcg"
@@ -322,7 +346,7 @@
 		</div>
 
 
-
+	<!-- About Ian  -->
 
 
 
@@ -334,16 +358,18 @@
 
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
     <script type="text/javascript" src="js/imagesloaded.js"></script>
-    <script type="text/javascript" src="js/jquery.jswipe-0.1.2.js"></script>
   	<script type="text/javascript" src="js/slideshow.js"></script>
-  	<script type="text/javascript" src="js/jquery.ipicture.js"></script>
   	<script type="text/javascript" src="js/skrollr.min.js"></script>
   	<script type="text/javascript" src="js/main.js"></script>
 
   	<script>
- 		$( "#iPicture" ).iPicture();
-	</script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
+
 
   	
 </body>
