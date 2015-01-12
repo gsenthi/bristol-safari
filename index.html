@@ -19,6 +19,18 @@
 
     <wrapper>
 
+    	<!-- Navigation -->
+
+    	<ul id="nav">
+    		<li class="current"><a href="#opening-curtain">Home</a></li>
+  			<li><a href="#landing-page">Chapter 1</a></li>
+  			<li><a href="#page-3">Chapter 2</a></li>
+  			<li><a href="#image-gallery">Fox Gallery</a></li>
+  			<li><a href="#page-7">Chapter 3</a></li>
+  			<li><a href="#page-9-map">Learn about foxes</a></li>
+  			<li><a href="#about-ian">About Ian Wade</a></li>
+		</ul>
+
     	<!-- Opening Curtain -->
 
     	<div class="block" id="opening-curtain">
@@ -38,21 +50,20 @@
 
 	    			<h2>Bristol Safari</h2>
 	
-	    			<p>Exploring Urban Wildlife</p>
+	    			<p>In search of the city's Urban Wildlife</p>
+
+	    			<p>Ian Wade</p>
+
+	    			<img src="public-folder/img/down-arrow.png">
 
 	    		</div>
 
-	    		<!-- <img class="intro-picture" src="public-folder/img/fox-vintage.png" 
-	    		width="300px"
-	    		data-60="top:15%; opacity:1;"
-	    		data-10-bottom="top:100%; opacity:0;"
-	    		
-	    		data-anchor-target="#landing-page"
-
-	    		> -->
 
 
-    	</div></div>
+
+    		</div>
+
+    	</div>
 
     	<!-- Landing page -->
     	<div class="block" id="landing-page">
@@ -173,7 +184,7 @@
 
 		<!-- page 6 -->
 
-		<div class="bss-slides foxgallery " tabindex="1" autofocus="autofocus">
+		<div class="bss-slides foxgallery" id="image-gallery" tabindex="1" autofocus="autofocus">
 
             <figure>
 
@@ -296,6 +307,8 @@
 
 		<div class="block" id="page-9-map">
 
+		
+
 			<div class="tooltip" id="tip1" title="This is my image's tooltip message!" /></div>
 
 			<div class="tooltip" id="tip2" title="This is the second tooltip" /></div>
@@ -317,7 +330,7 @@
 	      	data-center="background-position: 0px 50%;"
 	      	data-bottom-top="background-position: 0px 40%;"
 	      	data-top-bottom="background-position: -40px 50%;"
-	      	data-anchor-target="#page-7"
+	      	data-anchor-target="#page-10"
 	      >
 
 				<!-- empty div for image only -->
@@ -336,7 +349,7 @@
 	      	data-center="background-position: 0px 50%;"
 	      	data-bottom-top="background-position: 0px 40%;"
 	      	data-top-bottom="background-position: -40px 50%;"
-	  	   	data-anchor-target="#page-4"
+	  	   	data-anchor-target="#page-11"
 	      >
 
 				<!-- empty div for image only -->
@@ -349,10 +362,50 @@
 	<!-- About Ian  -->
 
 
+	<div class="block" id="about-ian">
+
+		  <div
+	      	class="bcg"
+	      	 data--200-bottom="opacity:0; "
+             data-center="opacity: 1; "
+             data-206-top="opacity: 1;"
+             data-10-top="opacity: 0;"
+             data-anchor-target="#about-ian">
+	  
+
+	      	<h1>a bit about me</h1>
+
+	      	<img src="public-folder/img/ian-pic.jpg">
+
+	      	<p> A bit about me I suppose you could say I am obsessed with wildlife and photography. When I was a young boy I watched David Attenborough on television as millions of people did all over the world, and was mesmerised by the amazing world he revealed to us. I would sit and read books on wildlife from cover to cover every night. As I got older I wanted to find out more about the creatures. I would watch in the park, garden or on the way to work.</p>
+
+	      	<p>In 2004 I bought a little compact digital camera and started photographing wildlife. My camera was basic but that didn’t matter. That was it. I was hooked. I spent all my spare time in and around Somerset photographing landscapes and wildlife. I find it hugely rewarding when you get a picture that you are proud of. I’ve spent the night in my car, stiff-necked from sleeping across the back seat of a Peugeot 106 – not the biggest or the most comfortable car in the world – but the whole process is worthwhile when you manage to capture that owl or badger you have been patiently waiting for. </p> 
+
+	      	<p>As time went on I spent more time in the city photographing wildlife and less in the country. For a couple of years I had been trying to photograph foxes in the countryside. Anybody who has tried to photograph these beautiful creatures in the wild will understand when I say they are extremely hard to watch and photograph: as soon as you make a noise or they catch your scent they are off. Urban foxes act completely differently. They hang around and check you out, even sometimes follow you home! This enables us to experience a wild animal at close quarters – something which is very rare in the countryside. Watching wildlife in the city I have found myself on a massive learning curve but that’s what I find exciting. There is so much more to see and learn. 
+			</p>	
+				
+
+		</div>
+
+	</div>
 
 
+ 	<!-- fading-out-->
 
+ 		<div class="block" id="fading-out">
 
+ 			<div class="bcg"
+			data-0="background-color:rgb(1,27,59);"
+	      	data-top="background-color:(0,0,0);"
+	      	data-anchor-target="#short-text-3">
+
+				
+
+			</div>
+
+		</div>
+
+<!-- END -->
 
     </wrapper>
 
@@ -362,6 +415,8 @@
     <script type="text/javascript" src="js/imagesloaded.js"></script>
   	<script type="text/javascript" src="js/slideshow.js"></script>
   	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
   	<script type="text/javascript" src="js/main.js"></script>
 
   	<script>
@@ -370,7 +425,14 @@
         });
     </script>
 
-
+	<script>
+	$('#nav').onePageNav({
+   		currentClass: 'current',
+    	changeHash: false,
+    	scrollSpeed: 1500
+  	});
+ 
+    </script>
   	
 </body>
 </html>
