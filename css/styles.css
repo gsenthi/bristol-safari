@@ -9,13 +9,23 @@ body, html {
 wrapper {
  overflow: hidden;
 }
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('public-folder/img/foxwalk.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
 .block {
     height: 100%;
     border-box: box-sizing;
 }
 
 .block-short {
-	/*height:55%;*/
 	border-box: box-sizing;
 }
 
@@ -93,12 +103,13 @@ border-radius: 3px;
   background-size: cover;
   height: 100%;
   width: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
 .opening-text {
 
   width: 100%;
-  padding-top: 25%;
+  padding-top: 30%;
   margin-bottom: 5%;
   margin: 0;
   color: black; 
@@ -110,7 +121,7 @@ border-radius: 3px;
 .opening-text h2{
 
   width: 100%;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.2);
   margin:0;
   padding-left: 5%;
   color: black;
@@ -123,9 +134,9 @@ border-radius: 3px;
 }
 
 .opening-text p{
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.2);
   width: 100%;
-  font-size: 3em;
+  font-size: 2em;
   margin:0;
   text-align: left;
   padding-left: 5%;
@@ -453,7 +464,7 @@ outline: 0;
     position:absolute;
     max-width:100%; 
     width: 100%;  
-    height: 100%;
+    height: 120%;
 
 }
 
@@ -472,35 +483,36 @@ outline: 0;
   -webkit-animation-iteration-count: infinite;
   border-radius: 50px;
   height: 30px;
-  width: 30px;
+  max-width: 30px;
+
 
 }
 
 #tip1 {
   position: relative;
-  top:58%;
-  left:75%;
+  top:68%;
+  left:35%;
   
 }
 
 #tip2 {
   position: relative;
-  top:50%;
-  left:35%;
+  top:45%;
+  left:48%;
   
 }
 
 #tip3 {
   position: relative;
-  top:54%;
-  left:30%;
+  top:30%;
+  left:57%;
  
 }
 
 #tip4 {
   position: relative;
-  top:30%;
-  left:26%;
+  top:10%;
+  left:46%;
  
 }
 
@@ -599,6 +611,10 @@ a:hover {
   color: #1D6DAA;
 }
 
+a:visited {
+  color: #1D6DAA;
+}
+
 /* Fading Out Curtain */
 
 #fading-out {
@@ -613,9 +629,16 @@ max-width: 100%;
 overflow: hidden;
 }
 
+.more-ian{
+  
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 #fading-out h1{
 text-align: left;
-margin-top: 0;
+margin-top: 2%;
 margin-left: 14%;
 padding-top: 4%;
 }

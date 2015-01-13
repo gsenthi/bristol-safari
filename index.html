@@ -7,7 +7,7 @@
     <title>Bristol Safari: Exploring Urban Wildlife</title>
 
     <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-    
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+	<div class="loader"></div>
 
     <wrapper>
 
@@ -50,7 +52,7 @@
 
 	    			<h2>Bristol Safari</h2>
 	
-	    			<p>In search of the city's Urban Wildlife</p>
+	    			<p>In search of the city's urban wildlife</p>
 
 	    			<p>Ian Wade</p>
 
@@ -228,7 +230,7 @@
            
             <figure>
 
-		      <img src="public-folder/img/g-Face-to-face1.jpg"alt="Feather" height="100%"/>
+		      <img src="public-folder/img/fox-interactive1.jpg"alt="Feather" height="100%"/>
 
 		      <figcaption>"Colorado"</figcaption> 
 
@@ -308,15 +310,15 @@
 		<div class="block" id="page-9-map">
 
 
-			<img src="public-folder/img/fox-interactive1.jpg">
+			<img src="public-folder/img/g-Face-to-face1.jpg">
 
 			<div class="tooltip" id="tip1" title="Like a cat's, the fox's thick tail aids its balance, but it has other uses as well. A fox uses its tail as a warm cover in cold weather and as a signal flag to communicate with other foxes."/></div>
 
-			<div class="tooltip" id="tip2" title="Foxes are mostly active at night, their eyes being specially adapted to night-time vision. The fox's hearing is also excellent, helping it to locate prey easily." /></div>
+			<div class="tooltip" id="tip2" title="Foxes are mostly active at night, their eyes being specially adapted to night-time vision. The fox's hearing is also excellent, helping it to locate prey easily."/></div>
 
 			<div class="tooltip" id="tip3" title="Foxes can identify each other's voices, just like humans.The red fox has 28 different sounds they use to communicate. These vocalizations include yips, growls and howls." /></div>
 
-			<div class="tooltip" id="tip4" title="Foxes have amazing hearing, they can hear a watch ticking 40 yards (120 foot) away" /></div>
+			<div class="tooltip" id="tip4" title="Foxes have amazing hearing, they can hear a watch ticking 40 yards (120 foot) away." /></div>
 
 
 
@@ -404,10 +406,11 @@
  		<div class="block" id="fading-out">
 
  			
+ 			<div class="more-ian">
+				<h1>For some more amazing images follow the link below:</h1>
 
-				<h1>For some more amazing images:</h1>
-
-				<h2><a href="http://www.ianwadephotography.co.uk/" target="_blank">[Ian Wade Photography]</a></h2>
+				<h2><a href="http://www.ianwadephotography.co.uk/" target="_blank">Ian Wade Photography</a></h2>
+			</div>
 
 			<div class="ian-images">
 				<img src="public-folder/img/bw-swan.jpg" width="20%">
@@ -436,6 +439,12 @@
 	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
 	<script type="text/javascript" src="js/jquery.nav.js"></script>
   	<script type="text/javascript" src="js/main.js"></script>
+
+  	<script>
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+	</script>
 
   	<script>
         $(document).ready(function() {
